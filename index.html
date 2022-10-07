@@ -4,53 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <link rel="stylesheet" href="style.css">
     <title>Adel's Portfolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
-        body, h1, h2 {
-          font-family: "Cinzel Decorative", cursive;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@650&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
         </style>
 </head>
 
-<body style="background-color: lavenderblush; color: darkmagenta; ">
-    <header>
-        <h1 style="color: darkmagenta; text-align: center; font-size: 50px ">
-          *･ﾟ✧*:ﾟ Mukashova Adel ･ﾟ✧*:･ﾟ
-        </h1>
-    </header>
-    <img src="img_me.jpg"  width="300" height="375">
+<body style="background-color: #f3cada; color: #7e077e; ">
+  <header>
+    <ul id="navbar">
+      <li><a href="#a1">About me</a></li>
+      <li><a href="#a2">Works</a></li>
+      <li><a href="#a3">Social networks</a></li>
+    </ul>  
 
-    <h2 style="color:mediumvioletred; text-align: center; font-size: 35px;"> 
+  </header>
+
+  <svg viewBox="0 0 1280 720">
+    <text text-anchor="middle" x="65%" y="35%">portfolio.</text>
+  </svg>
+
+    <div id="back">
+      <img src="img_me.jpg" width="300" height="375">
+    </div>
+    
+    <h2 style="color:#941365; text-align: center; font-size: 35px;"> 
       About me
     </h2>
-    <table style="width:50%">
-      <!--I'm 18 years old. A student of Ala-Too University, Computer Science department. 
-        I was born and raised in Kyrgyzstan, Bishkek. Graduated from 13th school-gymnasium. 
-        I like programming, designing stuff, painting. In my leisure time I read books, 
-        watch movies, TV-series and anime. -->
+    <table style="width:50%" align="center">
         <tbody>
           <tr>
             <td>
-              <span style="background-color:plum">Birthday</span>
+              <span style="background-color:#eea3c6">Name</span>
             </td>
-            <td>March 1, 2004 (I'm 18!)</td>
+            <td>♡ Adel Mukashova ♡</td>
           </tr>
           <tr>
             <td>
-              <span style="background-color: pink">Nationality</span>
+              <span style="background-color:#d498d4">Birthday</span>
+            </td>
+            <td>March 1, 2004</td>
+          </tr>
+          <tr>
+            <td>
+              <span style="background-color: #eea3c6">Nationality</span>
             </td>
             <td>Kyrgyz</td>
           </tr>
           <tr>
             <td>
-              <span style="background-color: plum">Zodiac Sign, MBTI Type</span>
+              <span style="background-color: #d498d4">Zodiac Sign, MBTI Type</span>
             </td>
             <td>Pisces, ISFJ</td>
           </tr>
           <tr>
             <td>
-              <span style="background-color:pink">Educational background</span>
+              <span style="background-color: #eea3c6">Educational background</span>
             </td>
             <td>
               <ul>
@@ -61,19 +73,20 @@
           </tr>
           <tr>
             <td>
-              <span style="background-color:plum">Skills</span>
+              <span style="background-color: #d498d4">Skills</span>
             </td>
             <td>
               <ul>
                 <li>Python</li>
                 <li>Java</li>
                 <li>HTML</li>
+                <li>CSS</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td>
-              <span style="background-color:pink">Hobbies</span>
+              <span style="background-color: #eea3c6">Hobbies</span>
             </td>
             <td>
               <ul>
@@ -86,18 +99,40 @@
         </tbody>
       </table>
 
-    <h2 style="color:mediumvioletred; text-align: center; font-size: 35px">Works</h2>
-    <dl>
-      <dt><b>❣ Barsbek Run</b></dt>
-      <dd>No link here:(</dd>
-      <dt><b>❣ Guesser Game</b></dt>
-      <dd><a href="https://github.com/adelm134/final_akinator">Click it:></a></dd>
-      <dt><b>❣ Batch Image processing</b></dt>
-      <dd><a href="https://github.com/adelm134/fin_p">Click!!</a></dd>
-    </dl>
+    <h2 style="color: #941365; text-align: center; font-size: 35px">Works</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="p3.jpg" style="width:100%">
+          <h3><b>Barsbek Run</b></h3> 
+          <p>Python</p> 
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="p1.jpg" style="width:100%">
+          <h3><b>Guesser Game</b></h3> 
+          <p>Python</p> 
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="p2.jpg" style="width:100%">
+          <h3><b>Batch Image Proccess App</b></h3> 
+          <p>Python</p> 
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="p4.jpg" style="width:100%">
+          <h3><b>Simulation</b></h3> 
+          <p>Python</p> 
+        </div>
+      </div>
+    </div>
     
-    <h2 style="color: mediumvioletred; text-align: center; font-size: 35px">Social Networks</h2>
-    <table width="30%">
+    <h2 style="color: #941365; text-align: center; font-size: 35px">Social Networks</h2>
+    <table width="30%" align="right">
         <tbody>
           <tr>
             <td>Instagram</td>
