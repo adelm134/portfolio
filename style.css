@@ -45,7 +45,7 @@ h1, h2 {
     fill-opacity: 1;
     stroke-width: 0;
     stroke-dasharray: 100% 0;
-    animation: stroke-offset 3s ease-out;
+    animation: stroke-offset 5s ease-out;
   }
   
   @keyframes stroke-offset {
