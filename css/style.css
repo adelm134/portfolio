@@ -1,0 +1,104 @@
+body {
+    font-family: "Cinzel", cursive;
+}
+h1, h2 {
+    font-family: "Cinzel Decorative", cursive;
+}
+
+#nav {
+    list-style-type: none;
+    max-width: 1300px;
+    text-align: end;
+    background-color: #6e156e;
+    justify-content: space-around;
+  }
+
+#nav li { display: inline; }
+#nav a {
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-weight: 700;
+  width: 100px;
+}
+#nav a:hover {
+  background-color: #aa49aa;
+}
+
+*, html, body {
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+
+svg {
+  position:absolute;
+  font: 12em Berkshire Swash;
+  letter-spacing: 0.1em;
+  width: 95%;
+  height: 100%;
+}
+
+svg text {
+  fill: #b9407d;
+  stroke: #690a69;
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 3s ease-out;
+}
+
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%;
+  }
+  25% {
+    stroke-width: 3px;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  75% {
+    stroke-width: 3px;
+  }
+  100% {
+    stroke-width: 0;
+  }
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 1px;
+}
+
+.row {
+  margin: 0 -5px;   
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #6e156e;
+  color: white;
+}
+
+@media (max-width: 360px) {
+  .column, row{
+    max-width: 100%;
+    display: block;
+  }
+
+}
