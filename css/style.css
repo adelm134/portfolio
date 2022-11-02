@@ -1,15 +1,16 @@
 body {
     font-family: "Cinzel", cursive;
 }
-h1, h2 {
+h1, h3 {
     font-family: "Cinzel Decorative", cursive;
+    color: #5c156e;
 }
 
 #nav {
     list-style-type: none;
     max-width: 1300px;
     text-align: end;
-    background-color: #6e156e;
+    background-color: #5c156e;
     justify-content: space-around;
   }
 
@@ -22,7 +23,7 @@ h1, h2 {
   width: 100px;
 }
 #nav a:hover {
-  background-color: #aa49aa;
+  background-color: #a05dad;
 }
 
 *, html, body {
@@ -31,41 +32,22 @@ h1, h2 {
 }
 
 
-svg {
-  position:absolute;
-  font: 12em Berkshire Swash;
-  letter-spacing: 0.1em;
-  width: 95%;
-  height: 100%;
+.anim {
+  white-space: nowrap;
+  overflow: hidden;    
+  font-size: 50px;
+  font-family: Dancing Script;
+  color: #5c156e;
 }
 
-svg text {
-  fill: #b9407d;
-  stroke: #690a69;
-  fill-opacity: 1;
-  stroke-width: 0;
-  stroke-dasharray: 100% 0;
-  animation: stroke-offset 3s ease-out;
+.anim {
+  animation: animated-text 7s ease-out;
+  animation-iteration-count: infinite;
 }
 
-@keyframes stroke-offset {
-  0% {
-    fill-opacity: 0;
-    stroke-width: 0;
-    stroke-dasharray: 0% 100%;
-  }
-  25% {
-    stroke-width: 3px;
-  }
-  50% {
-    fill-opacity: 0;
-  }
-  75% {
-    stroke-width: 3px;
-  }
-  100% {
-    stroke-width: 0;
-  }
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 1000px;}
 }
 
 
@@ -91,8 +73,8 @@ svg text {
   padding: 10px;
   margin: 10px;
   text-align: center;
-  background-color: #6e156e;
-  color: white;
+  background-color: #eea3c6;
+  color: #5c156e;
 }
 
 @media (max-width: 360px) {
@@ -101,4 +83,14 @@ svg text {
     display: block;
   }
 
+}
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  justify-content: space-around;
 }
