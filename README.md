@@ -6,6 +6,7 @@
 <br> 
 <br>
 A video from YouTube and footer with clickable icons....and copyright...yes, the company is real
+<br>
 ![image](https://user-images.githubusercontent.com/100151471/199830543-e1b70082-6135-4c90-ab83-fbe6b7ca4228.png)
 <hr>
 I think it actually looks and functions not that bad :>
