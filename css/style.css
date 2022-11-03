@@ -56,9 +56,11 @@ color: black;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 10px;
+  position: absolute;
+	margin-top: 90%;
 	height: 400px;
 	width: 300px;
+  right: 5%;
 }
 
 .result img {
@@ -69,9 +71,12 @@ color: black;
 
 .buttons {
 	display: flex;
-	align-items: flex-end;
-	justify-content: end;
+	margin-bottom: 190%;
+  right: 4.3%;
+  position: absolute;
+
 }
+
 
 button {
 	background-color: #7b81d6;
@@ -147,6 +152,7 @@ button:focus {
   }
 
 }
+
 .fa {
   padding: 20px;
   font-size: 50px;
